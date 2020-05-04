@@ -1,0 +1,17 @@
+[
+  {
+    "uuid": "8CCC681D2E7B40408E51A15497202669",
+    "todoListName": "Stationary",
+    "removeList": false
+  },
+  {
+    "uuid": "9E11987C121E40DDA7F89F783A540C00",
+    "todoListName": "Groceries",
+    "removeList": false
+  },
+  {
+    "uuid": "70382A6B379F489E85586F6F8CC0BFA1",
+    "todoListName": "Things to do today",
+    "removeList": false
+  }
+]

@@ -1,0 +1,30 @@
+<mvc:View controllerName="todolist.ToDoList.controller.View1" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m" xmlns:f="sap.f"
+	xmlns:core="sap.ui.core" xmlns:html="http://www.w3.org/1999/xhtml">
+	<Shell id="shell">
+		<App id="app">
+			<pages>
+				<Page id="page" title="My To-Do List" showHeader="true">
+					<headerContent>
+						<Label text="Local"></Label>
+							<Switch state="true"   type="AcceptReject" change = "onSwitch"/>
+						<Button icon="sap-icon://add" tooltip="Create new list" press = "handleSelectDialogPress"/>
+					</headerContent>
+					<content>
+						<f:GridList id="gridList" items="{ToDoList>/}">
+							<f:GridListItem class="sapUiSmallMargin" press = "onListSelection" type="Active">
+								<VBox height="100%">
+									<VBox class="sapUiSmallMargin">
+										<layoutData>
+											<FlexItemData growFactor="1" shrinkFactor="0"/>
+										</layoutData>
+										<Title text="{ToDoList>todoListName}" wrapping="true"/>
+									</VBox>
+								</VBox>
+							</f:GridListItem>
+						</f:GridList>
+					</content>
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>

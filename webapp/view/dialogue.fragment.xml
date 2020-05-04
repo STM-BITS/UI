@@ -1,0 +1,11 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core">
+	<Dialog
+		id="helloDialog"
+		title="Create new List" contentWidth ="40%" >
+		<Input placeholder = "Add list" class = "sapUiSmallMargin" width = "92%"/>
+		<buttons>
+			<Button text = "Add" type = "Accept" press = "onAddPress"></Button>
+			<Button text = "Cancel" type = "Reject" press = "onCancelPress"></Button>
+		</buttons>
+	</Dialog>
+</core:FragmentDefinition>
